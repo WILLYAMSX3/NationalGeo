@@ -1,0 +1,16 @@
+#copy_rodape {
+    grid-column: 3/5; /*Vai da coluna 3 até a 5*/
+    background: #fb5;
+}
+
+#copy_rodape p {
+    padding: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bolder;
+}
+
+@media (max-width: 700px) {
+    #copy_rodape {
+        grid-column: 1;
+    }
+}

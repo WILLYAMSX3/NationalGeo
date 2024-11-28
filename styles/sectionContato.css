@@ -1,0 +1,27 @@
+.mapa {
+    grid-column: 2; /*vai ficar na segunda coluna*/   
+}
+
+.list_dados {
+    grid-column: 3; /*vai ficar na terceira coluna*/
+}
+
+.list_dados li {
+    margin-bottom: 16px;
+    font-family: Helvetica, Arial;
+}
+
+.list_dados li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background: #fb5;
+}
+
+@media (max-width: 700px) {
+    .list_dados, .mapa {
+        grid-column: 1 / 3;
+      }
+}

@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+/*
+    font-family: "IBM Plex Mono", monospace;
+    font-family: "Playfair Display SC", serif;
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #faf6ed;
+    color: #222;
+       
+}
+
+.grid_container{
+  display: grid;
+  grid-template-columns: 1fr 120px minmax(300px, 800px) 1fr; /*Possui 4 colunas(1fr 120px minmax e 1fr)*/
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Classe que envolve todas as sessões*/
+.grid-section {
+    grid-column: 2 / 4; /*Vai começar na segunda coluna e vai até a quarta*/
+    width: 100%;
+    padding: 10px; 
+    display: grid;
+    grid-template-columns: 90px 300px 1fr;
+    gap: 20px;
+    margin-bottom: 64px;  
+}
+
+/*Responsividade*/
+@media (max-width: 700px) {
+    .grid_container {
+      grid-template-columns: 1fr;
+    }
+    
+    .grid-section{
+      grid-column: 1;
+      grid-template-columns: 100px 1fr;
+      grid-gap: 10px;
+    }
+  
+    .grid-section h1 {
+      font-size: 3rem;
+    } 
+    
+  }

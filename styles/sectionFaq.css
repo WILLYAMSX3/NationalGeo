@@ -1,0 +1,71 @@
+.faq_list {
+    grid-column: 2 / 4; 
+}
+
+.faq_list dt {
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bold;
+    margin-top: 32px;
+    margin-bottom: 10px;
+    color: #e54;
+    cursor: pointer;
+}
+
+.faq_list dt::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+    background: #fb4;
+}
+
+.faq_list dd {
+    font-family: Helvetica, Arial;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+/*Responsividade*/
+@media (max-width: 700px) {
+    .faq_list {
+        grid-column: 1 / 3;
+    }
+}
+/*Fim responsividade*/
+
+/*Iniciando JavaScript*/
+.js_accordion dd{
+    display: none;
+}
+
+.js_accordion dt::after{
+    content: "↓";
+    margin-left: 10px;
+}
+
+.js_accordion dt.ativo::after{
+    content: "↑";
+    margin-left: 10px;
+}
+
+.js_accordion dd.ativo{
+    display: block;
+    animation: slideDown .7s forwards;
+}
+/*Fim do javaScript*/
+
+/*criando animação*/
+
+@keyframes slideDown {
+    from{/*Movimento inicio da animação*/
+        opacity: 0;
+        max-height: 0;
+    }
+
+    to{ /*Movimento fim da animação*/
+        max-height: 200px;
+        opacity: 1;
+    }
+}
+/*Fim da animação*/

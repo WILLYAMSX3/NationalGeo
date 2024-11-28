@@ -1,0 +1,46 @@
+[data-dropMenu]{
+    position: relative;
+}
+
+[data-dropMenu] .drop_down_menu{
+    display: none;
+}
+
+[data-dropMenu]:hover .drop_down_menu,
+[data-dropMenu].ativo .drop_down_menu{
+    display: block;
+    animation: drop-up .5s;
+}
+
+.drop_down_menu{
+    position: absolute;
+    top: 38px;
+    background-color: #e54;
+    z-index: 1;
+    border-radius: 3px;
+    border: 2px solid #333;
+}
+
+.drop_down_menu::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -12px;
+    width: 0px;
+    height: 0px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid #e54;
+}
+
+@keyframes drop-up{
+    from{
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}

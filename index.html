@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animais Fantásticos</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>        
+    <div class="grid_container">
+        <header class="menu">
+            <nav>
+                <button
+                    class="button_mobile"
+                    data-menu="buttonMobile"
+                >
+                    Menu
+                </button>
+                <ul data-menu="list" id="menu"><!--Atributo e id do menu mobile-->
+                    <li><a href="#animais">Animais</a></li>
+                    <li><a href="#faq">Curiosidades</a></li>
+                    <li data-dropMenu="drop_down">
+                        <a href="#">Sobre</a>
+                        <ul class="drop_down_menu">
+                            <li><a href="#">Empresa</a></li>
+                            <li><a href="#">Equipe</a></li>
+                            <li><a href="#">Socios</a></li>
+                            <li><a href="#">Investidores</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#" data-modal="abrir">Login →</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+
+        <section class="grid-section animais_primeira_sessao" id="animais">
+            <h1 class="titulo">NationalGeo</h1>
+
+            <ul class="animais_list js_tabAnimais">
+                <li><img src="images/imagem1.jpg" alt=""></li>
+                <li><img src="images/imagem2.jpg" alt=""></li>
+                <li><img src="images/imagem3.jpg" alt=""></li>
+                <li><img src="images/imagem4.jpg" alt=""></li>
+                <li><img src="images/imagem5.jpg" alt=""></li>
+                <li><img src="images/imagem6.jpg" alt=""></li>
+            </ul>
+
+            <div class="animais_descricao js_tabDescricao">
+                <section data-anima="show-right">
+                    <h2>Raposa</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut quis, magnam eum incidunt veritatis reprehenderit iure dignissimos, necessitatibus in nesciunt deleniti natus. Voluptates eveniet eaque, optio delectus obcaecati natus.
+                    </p>
+                </section>
+
+                <section data-anima="show-down">
+                    <h2>Esquilo</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut quis, magnam eum incidunt veritatis reprehenderit iure dignissimos, necessitatibus in nesciunt deleniti natus. Voluptates eveniet eaque, optio delectus obcaecati natus.
+                    </p>
+                </section>
+
+                <section data-anima="show-right">
+                    <h2>Urso</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut quis, magnam eum incidunt veritatis reprehenderit iure dignissimos, necessitatibus in nesciunt deleniti natus. Voluptates eveniet eaque, optio delectus obcaecati natus.
+                    </p>
+                </section>
+
+                <section data-anima="show-down">
+                    <h2>Lobo</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut quis, magnam eum incidunt veritatis reprehenderit iure dignissimos, necessitatibus in nesciunt deleniti natus. Voluptates eveniet eaque, optio delectus obcaecati natus.
+                    </p>
+                </section>
+
+                <section data-anima="show-right">
+                    <h2>Macaco</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut quis, magnam eum incidunt veritatis reprehenderit iure dignissimos, necessitatibus in nesciunt deleniti natus. Voluptates eveniet eaque, optio delectus obcaecati natus.
+                    </p>
+                </section>
+
+                <section data-anima="show-down">
+                    <h2>Leão</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores aut quis, magnam eum incidunt veritatis reprehenderit iure dignissimos, necessitatibus in nesciunt deleniti natus. Voluptates eveniet eaque, optio delectus obcaecati natus.
+                    </p>
+                </section>
+            </div>
+        </section>
+
+        <!--Início Segunda Sessão-->
+        <section class="grid-section faq_segunda_sessao" id="faq">
+            <h1 class="titulo">Curiosidades</h1>
+            <!--Logo Abaixo: criando lista de definição-->
+            <dl class="faq_list js_accordion">
+                <dt>Qual a idade dos animais?</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia impedit pariatur doloremque!</dd>
+            
+                <dt>Eles são fantásticos?</dt>
+                <dd>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident quia nesciunt quisquam.</dd>
+
+                <dt>Qual a diferença?</dt>
+                <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel numquam debitis placeat.</dd>
+
+                <dt>Como proteger?</dt>
+                <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eveniet minima harum?</dd>
+            </dl>
+        </section>
+        <!--Fim Segunda Sessão-->
+
+        <!--Início terceira sessão-->
+        <section id="contato" class="grid-section contato_terceira_sessao">
+            <h1 class="titulo">Contato</h1>
+            <div class="mapa">
+                <img src="images/mapa.png" alt="">
+            </div>
+            <ul class="list_dados">
+                <li>contato@fulano.com</li>
+                <li>+55 (xx) xxxxx-xxxx</li>
+                <li>Bairro</li>
+                <li>Cidade-ESTADO</li>
+            </ul>
+        </section>
+        <!--Fim terceira sessão-->
+
+        <!--Início Rodapé-->
+        <footer id="copy_rodape">
+            <p>Todos os direitos reservados.</p>
+        </footer>
+        <!--Fim Rodapé-->
+    </div>
+
+        <!--Inicio Modal-->
+        <section class="modal_container" data-modal="js_containerModal">
+            <div class="modal">
+                <button class="btn_fechaModal" data-modal="js_btnFechaModal">
+                    X
+                </button>
+                <form class="form" action="#">
+                    <label for="login">Login:</label>
+                    <input type="email" name="login" id="login" placeholder="Email">
+
+                    <label for="senha">Senha:</label>
+                    <input type="password" name="senha" id="senha" placeholder="Senha">
+                    <button type="submit">Entrar</button>
+                </form>
+               
+            </div>
+        </section>
+        <!--Fim Modal-->
+        <script src="scripts/script.js"></script>
+</body>
+</html>
